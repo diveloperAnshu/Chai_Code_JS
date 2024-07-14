@@ -51,13 +51,13 @@ console.log(12 > 0 ? "Positive" : "Negative")
 const readline = require('readline');
 
 // Create an interface for reading input from the console
-const rl = readline.createInterface({
+const rol = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
 // Ask the user for input
-rl.question("Enter a number: ", function (number) {
+rol.question("Enter a number: ", function (number) {
     number = parseInt(number); // Convert the input to an integer
 
     // Check if the number is positive, negative, or zero using ternary operator
@@ -66,7 +66,7 @@ rl.question("Enter a number: ", function (number) {
     console.log(`The number ${number} is ${result}.`);
 
     // Close the input stream
-    rl.close();
+    rol.close();
 });
 
 // EXPLANATION FOR THE ABOVE CODE BIT BY BIT
